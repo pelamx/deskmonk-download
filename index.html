@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>cleanSpace by pelamx</title>
+<meta name="description" content="cleanSpace: bilgisayarınızdaki kopya, gereksiz ve büyük dosyaları bulan akıllı depolama temizleyici.">
+<link rel="icon" href="icon.png">
+<style>
+  :root {
+    --bg: #f6f7fb; --card: #ffffff; --text: #171a26; --muted: #5f6577;
+    --border: #e3e6ef; --accent: #4f6ef7; --accent-text: #ffffff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #14161d; --card: #1d2029; --text: #eceef5; --muted: #9aa0b2;
+      --border: #2b2f3b; --accent: #5b78ff; --accent-text: #ffffff;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Roboto, sans-serif;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 64px 16px 48px; }
+  header { display: flex; align-items: center; gap: 16px; }
+  header img { width: 72px; height: 72px; border-radius: 18px; }
+  h1 { font-size: 32px; margin: 0; letter-spacing: -0.02em; }
+  h1 span { color: var(--accent); font-weight: 500; font-size: 20px; }
+  .tagline { color: var(--muted); margin: 4px 0 0; }
+  .card {
+    background: var(--card); border: 1px solid var(--border); border-radius: 16px;
+    padding: 24px; margin-top: 32px;
+  }
+  .download {
+    display: inline-flex; align-items: center; gap: 10px; background: var(--accent);
+    color: var(--accent-text); text-decoration: none; font-weight: 600; font-size: 17px;
+    padding: 14px 24px; border-radius: 12px;
+  }
+  .download:hover { filter: brightness(1.08); }
+  .download:focus-visible { outline: 3px solid var(--text); outline-offset: 3px; }
+  .meta { color: var(--muted); font-size: 14px; margin-top: 12px; }
+  h2 { font-size: 18px; margin: 0 0 12px; }
+  ul, ol { margin: 0; padding-left: 20px; }
+  li + li { margin-top: 6px; }
+  code {
+    font: 13px ui-monospace, SFMono-Regular, Menlo, monospace; background: var(--bg);
+    border: 1px solid var(--border); border-radius: 6px; padding: 1px 6px; word-break: break-all;
+  }
+  footer { color: var(--muted); font-size: 13px; margin-top: 40px; text-align: center; }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="icon.png" alt="cleanSpace logosu">
+    <div>
+      <h1>cleanSpace <span>by pelamx</span></h1>
+      <p class="tagline">Akıllı depolama temizleyici</p>
+    </div>
+  </header>
+
+  <section class="card">
+    <a class="download" href="cleanSpace-0.2.0-macos.dmg" download>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>
+      macOS için indir
+    </a>
+    <p class="meta">Sürüm 0.2.0 · 12 MB · Apple Silicon ve Intel · macOS 11 ve üzeri</p>
+  </section>
+
+  <section class="card">
+    <h2>Ne yapar?</h2>
+    <ul>
+      <li><strong>Kopyalar:</strong> içeriği birebir aynı dosyaları bulur, her grubun ilk kopyasını korur.</li>
+      <li><strong>Gereksiz dosyalar:</strong> uygulama önbellekleri, çöp kutusu, geçici dosyalar, yedekler ve loglar.</li>
+      <li><strong>Eski indirmeler</strong> ve <strong>büyük dosyalar</strong>.</li>
+      <li>Silmeden önce ne kadar yer açılacağını gösterir. Dosya adı veya yolu hiçbir yere gönderilmez.</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Kurulum</h2>
+    <ol>
+      <li>DMG'yi açın, <strong>cleanSpace</strong>'i <strong>Applications</strong> klasörüne sürükleyin.</li>
+      <li>Uygulama Apple tarafından imzalanmadığı için ilk açılışta macOS uyarı verir. <strong>Sistem Ayarları → Gizlilik ve Güvenlik</strong> bölümünde <strong>Yine de Aç</strong>'a basın.</li>
+    </ol>
+    <p class="meta">SHA-256: <code>9fc96aad05e66717833f56575a7cd2b08639d2d734cab9b74d9914c0d84f52fb</code></p>
+  </section>
+
+  <footer>cleanSpace by pelamx</footer>
+</main>
+</body>
+</html>
